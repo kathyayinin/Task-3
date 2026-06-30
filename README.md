@@ -1,41 +1,35 @@
-# 📝 Task-3: To-Do Web App
+# 🧠 Quiz Dashboard Pro
 
-## 📖 Description
-This is a responsive and user-friendly To-Do Web Application developed as part of the SkillCraft Technology Internship. The application helps users organize their daily tasks efficiently by allowing them to add, edit, delete, and manage tasks with an intuitive interface.
+## 📌 About
+
+Quiz Dashboard Pro is a simple and interactive quiz application developed using **HTML, CSS, and JavaScript** as part of my **SkillCraft Technology Web Development Internship**.
 
 ## ✨ Features
-- ➕ Add new tasks
-- ✏️ Edit existing tasks
-- 🗑️ Delete tasks
-- ✅ Mark tasks as completed
-- 🔍 Search tasks
-- 📅 Set due date and time
-- 📊 Dashboard with task statistics
-- 🌙 Dark Mode
-- 💾 Local Storage (tasks are saved even after refreshing)
-- 📱 Responsive design for desktop and mobile
+
+- 🏠 Home Dashboard
+- 🎮 Interactive Quiz
+- ⏱️ Timer
+- 📊 Score Tracking
+- 📈 Performance Analysis
+- 📚 Answer Review
+- 🏆 Leaderboard
+- 📱 Responsive Design
 
 ## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
 - JavaScript
-- Local Storage API
+- Chart.js
 
-## 📂 Project Structure
-```
-Task-3/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
-```
 ## 🚀 How to Run
+
 1. Download or clone this repository.
 2. Open the project folder.
-3. Open `index.html` in any modern web browser.
+3. Open `index.html` in your browser.
 
 ## 👩‍💻 Author
+
 **Kathyayini Nerandla**
 
-## 🎯 Internship
-**SkillCraft Technology Internship**
+**SkillCraft Technology – Web Development Internship**
