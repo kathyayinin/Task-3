@@ -35,9 +35,6 @@ Task-3/
 2. Open the project folder.
 3. Open `index.html` in any modern web browser.
 
-## 📸 Screenshot
-(Add a screenshot of your project here if you want.)
-
 ## 👩‍💻 Author
 **Kathyayini Nerandla**
 
