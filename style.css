@@ -1,0 +1,356 @@
+/* ===== GLOBAL ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b1020;
+    color:white;
+    min-height:100vh;
+}
+
+/* ===== APP LAYOUT ===== */
+
+.app{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    padding:20px;
+    border-right:1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#38bdf8;
+}
+
+.sidebar input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    margin-bottom:15px;
+    background:#1f2937;
+    color:white;
+}
+
+.sidebar input::placeholder{
+    color:#bdbdbd;
+}
+
+.sidebar button{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:10px;
+    background:#1f2937;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:15px;
+}
+
+.sidebar button:hover{
+    background:#38bdf8;
+    transform:translateX(3px);
+}
+
+/* ===== MAIN ===== */
+
+.main{
+    flex:1;
+    padding:25px;
+    overflow-y:auto;
+}
+
+/* ===== TABS ===== */
+
+.tab{
+    display:none;
+}
+
+.active{
+    display:block;
+}
+
+/* ================================= */
+/* HOME PAGE */
+/* ================================= */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:0.85;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* BIG START BUTTON */
+
+.startBtn{
+    margin-top:35px;
+    padding:20px 60px;
+    font-size:28px;
+    font-weight:bold;
+    border:none;
+    border-radius:16px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.startBtn:hover{
+    transform:scale(1.05);
+}
+
+/* ===== DASHBOARD STATS ===== */
+
+.statsGrid{
+    margin-top:40px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.statCard{
+    background:#111827;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.statCard h2{
+    font-size:42px;
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.statCard p{
+    opacity:0.8;
+    font-size:17px;
+}
+
+/* ================================= */
+/* QUIZ PAGE */
+/* ================================= */
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.top h2{
+    background:#111827;
+    padding:12px 20px;
+    border-radius:10px;
+}
+
+/* BIG QUESTION */
+
+.bigQ{
+    font-size:42px;
+    line-height:1.4;
+    margin:30px 0;
+}
+
+/* OPTIONS */
+
+#options button{
+    display:block;
+    width:100%;
+    padding:16px;
+    margin-bottom:12px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#1f2937;
+    color:white;
+
+    cursor:pointer;
+    font-size:18px;
+
+    transition:0.25s;
+}
+
+#options button:hover{
+    background:#334155;
+    transform:translateX(4px);
+}
+
+/* ANSWER COLORS */
+
+.selected{
+    background:#facc15 !important;
+    color:black !important;
+}
+
+.correct{
+    background:#22c55e !important;
+    color:white !important;
+}
+
+.wrong{
+    background:#ef4444 !important;
+    color:white !important;
+}
+
+/* INPUT */
+
+#fill{
+    width:100%;
+    padding:15px;
+    font-size:18px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#1f2937;
+    color:white;
+
+    margin-top:10px;
+    margin-bottom:15px;
+
+    display:none;
+}
+
+/* NEXT BUTTON */
+
+#quiz button:last-child{
+    padding:14px 30px;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* ================================= */
+/* ANALYSIS PAGE */
+/* ================================= */
+
+#analysis h1{
+    margin-bottom:20px;
+}
+
+#chart{
+    max-width:500px;
+    margin:20px auto;
+    display:block;
+}
+
+#analysisText{
+    margin-top:25px;
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
+}
+
+/* ================================= */
+/* REVIEW PAGE */
+/* ================================= */
+
+#reviewBox{
+    margin-top:20px;
+}
+
+#reviewBox div{
+    background:#111827;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    line-height:1.8;
+}
+
+/* ================================= */
+/* LEADERBOARD */
+/* ================================= */
+
+#board{
+    margin-top:20px;
+}
+
+#board h3{
+    background:#111827;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* ================================= */
+/* SCROLLBAR */
+/* ================================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b1020;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media(max-width:900px){
+
+    .app{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .statsGrid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .bigQ{
+        font-size:30px;
+    }
+
+    .top{
+        flex-direction:column;
+        gap:10px;
+    }
+}

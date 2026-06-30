@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Dashboard Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>QuizPro 🧠</h2>
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Enter Name"
+        >
+
+        <button onclick="openTab('home')">
+            🏠 Home
+        </button>
+
+        <button onclick="openTab('quiz')">
+            🎮 Quiz
+        </button>
+
+        <button onclick="openTab('analysis')">
+            📊 Analysis
+        </button>
+
+        <button onclick="openTab('review')">
+            📚 Review
+        </button>
+
+        <button onclick="openTab('leaderboard')">
+            🏆 Leaderboard
+        </button>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- HOME -->
+        <div id="home" class="tab active">
+
+            <div class="hero">
+
+                <h1>🧠 Quiz Dashboard Pro</h1>
+
+                <p>
+                    Test your knowledge, track your performance,
+                    analyze your mistakes, review answers,
+                    and compete on the leaderboard.
+                </p>
+
+                <button
+                    class="startBtn"
+                    onclick="startQuiz()"
+                >
+                    🚀 START QUIZ
+                </button>
+
+            </div>
+
+            <div class="statsGrid">
+
+                <div class="statCard">
+                    <h2 id="playerCount">0</h2>
+                    <p>Total Players</p>
+                </div>
+
+                <div class="statCard">
+                    <h2 id="topScore">0</h2>
+                    <p>Highest Score</p>
+                </div>
+
+                <div class="statCard">
+                    <h2 id="avgScore">0%</h2>
+                    <p>Average Accuracy</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- QUIZ -->
+        <div id="quiz" class="tab">
+
+            <div class="top">
+
+                <h2 id="qno">
+                    Q1/5
+                </h2>
+
+                <h2 id="score">
+                    Score: 0
+                </h2>
+
+                <h2 id="timer">
+                    10
+                </h2>
+
+            </div>
+
+            <div id="question" class="bigQ">
+                Question Appears Here
+            </div>
+
+            <div id="options"></div>
+
+            <input
+                id="fill"
+                type="text"
+                placeholder="Type answer..."
+            >
+
+            <button onclick="nextQ()">
+                Next Question
+            </button>
+
+        </div>
+
+        <!-- ANALYSIS -->
+        <div id="analysis" class="tab">
+
+            <h1>
+                📊 Performance Analytics
+            </h1>
+
+            <canvas id="chart"></canvas>
+
+            <div id="analysisText"></div>
+
+        </div>
+
+        <!-- REVIEW -->
+        <div id="review" class="tab">
+
+            <h1>
+                📚 Review Answers
+            </h1>
+
+            <div id="reviewBox"></div>
+
+        </div>
+
+        <!-- LEADERBOARD -->
+        <div id="leaderboard" class="tab">
+
+            <h1>
+                🏆 Leaderboard
+            </h1>
+
+            <div id="board"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
